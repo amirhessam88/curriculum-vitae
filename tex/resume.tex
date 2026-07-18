@@ -5,6 +5,9 @@
 
 \documentclass[]{template}
 
+% Bold without trailing space (template \custombold adds one)
+\newcommand{\rb}[1]{{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #1}}
+
 \begin{document}
 
 \namesection{Amirhessam}{Tahmassebi}{
@@ -13,12 +16,13 @@
 LinkedIn:// \href{https://www.linkedin.com/in/amirhessam}{\bf amirhessam} |
 Web:// \href{https://www.amirhessam.com}{\bf amirhessam.com} |
 GitHub:// \href{https://github.com/amirhessam88}{\bf amirhessam88} |
-ORCID:// \href{https://orcid.org/0000-0003-4677-6907}{\bf 0000-0003-4677-6907} \\
+Scholar:// \href{https://scholar.google.com/citations?user=CnHZjFAAAAAJ\&hl=en}{\bf profile} \\
 }
 
 \section{Summary}
 \sectionsep
-Staff Software Engineer building production AI/ML platforms, MLOps pipelines, and observability systems. PhD in Computational Science; founder of \href{https://github.com/slickml}{\bf SlickML}, an open-source organization for MLOps and AI tools. Targeting MLOps~/~AI Engineer roles.
+\rb{Staff Software Engineer} building production \rb{AI/ML platforms}, \rb{MLOps} pipelines, and observability systems.\\
+\rb{PhD} in Computational Science with \rb{80+ publications} and \rb{1700+ citations} (\href{https://scholar.google.com/citations?user=CnHZjFAAAAAJ\&hl=en}{\rb{Google Scholar}}); founder of \href{https://github.com/slickml}{\rb{SlickML}}, an open-source organization for MLOps and AI tools. Targeting \rb{MLOps~/~AI Engineer} roles.
 \sectionsep
 
 \section{Experience}
@@ -28,8 +32,8 @@ Staff Software Engineer building production AI/ML platforms, MLOps pipelines, an
 \descript{| Staff Software Engineer}
 \location{November 2024 -- Present | Palo Alto, CA (Remote)}
 \begin{tightemize}
-\item Technical lead of ConvoHealth, the observability framework for Rivian Voice Assistant (reliability, monitoring, and production AI evaluation via LLM-as-judge).
-\item Technical lead for Databricks platform architecture and Asset Bundles, enabling teams to ship production data and ML pipelines with CI/CD.
+\item \rb{Technical lead} of \rb{ConvoHealth}, the observability framework for Rivian Voice Assistant---covering reliability, monitoring, and production AI evaluation via \rb{LLM-as-a-judge}---scaled to \rb{150K} Rivian vehicles.
+\item \rb{Technical lead} for \rb{Databricks} platform architecture and \rb{Asset Bundles (DABs)}, enabling teams to ship production data and ML pipelines with \rb{CI/CD}.
 \end{tightemize}
 
 \sectionsep
@@ -37,9 +41,9 @@ Staff Software Engineer building production AI/ML platforms, MLOps pipelines, an
 \descript{| Staff Data Scientist, Algorithms}
 \location{September 2021 -- November 2024 | Palo Alto, CA (Remote)}
 \begin{tightemize}
-\item Technical lead of Process-Health, an anomaly detection system deployed in Rivian's battery and drive-unit shops.
-\item Technical lead of Battery Submodule Thermography, an on-edge Physical AI model deployed on Rivian's battery submodule line.
-\item Built AI/ML platform architecture with ZenML, Kubeflow, and MLflow; delivered factory decision-making and data architecture for Digital Manufacturing Engineering.
+\item \rb{Technical lead} of \rb{Process-Health}, an anomaly detection system deployed in Rivian's battery and drive-unit shops.
+\item \rb{Technical lead} of \rb{Battery Submodule Thermography}, an edge-deployed \rb{Physical AI} model on Rivian's battery submodule line.
+\item Built \rb{AI/ML platform} architecture with \rb{ZenML}, \rb{Kubeflow}, and \rb{MLflow}; delivered a factory decision-making platform and data architecture for Rivian's Digital Manufacturing Engineering organization.
 \end{tightemize}
 
 \sectionsep
@@ -47,7 +51,7 @@ Staff Software Engineer building production AI/ML platforms, MLOps pipelines, an
 \descript{| Senior Data Scientist}
 \location{January 2020 -- September 2021 | Houston, TX}
 \begin{tightemize}
-\item Led interpretable pricing and customer-segmentation models (PE/PP, North America) that drove \custombold{\$90M} in revenue impact in 2020 and \custombold{\$41M} in H1 2021.
+\item Led development of interpretable pricing and customer-segmentation models (PE/PP, North America) that drove \rb{\$90M} in revenue impact in 2020 and \rb{\$41M} in H1 2021.
 \end{tightemize}
 
 \sectionsep
@@ -55,7 +59,7 @@ Staff Software Engineer building production AI/ML platforms, MLOps pipelines, an
 \descript{| Data Scientist}
 \location{October 2018 -- December 2019 | Kansas City, MO}
 \begin{tightemize}
-\item Led development of 90-day pediatric asthma readmission (CHOC) and 30-day all-cause readmission models across 17 U.S. hospitals on Spark/AWS.
+\item Led development of a 90-day pediatric asthma readmission model (\rb{CHOC}) and 30-day all-cause readmission models across \rb{17 U.S. hospitals} on \rb{Spark/AWS}.
 \end{tightemize}
 
 \sectionsep
@@ -63,7 +67,7 @@ Staff Software Engineer building production AI/ML platforms, MLOps pipelines, an
 \descript{| Data Scientist}
 \location{June 2017 -- August 2018 | Palo Alto, CA}
 \begin{tightemize}
-\item Developed hybrid ML algorithms for population health management on Stanford and UK Biobank data; scaled models with Spark/MLlib.
+\item Developed hybrid ML algorithms for \rb{population health} management using Stanford and UK Biobank datasets; scaled models with \rb{Spark/MLlib}.
 \end{tightemize}
 
 \sectionsep
@@ -84,7 +88,7 @@ Staff Software Engineer building production AI/ML platforms, MLOps pipelines, an
 \sectionsep
 \section{Skills}
 \begin{minipage}[t]{\textwidth}
-\textbf{MLOps / AI:} Databricks \textbullet{} MLflow \textbullet{} Kubeflow \textbullet{} LLMs \textbullet{} CI/CD \textbullet{} Observability \\
+\textbf{MLOps / AI:} Databricks \textbullet{} MLflow \textbullet{} Ray \textbullet{} K8s / Kubeflow \textbullet{} LLMs \textbullet{} CI/CD \textbullet{} Observability \\
 \textbf{Data / Cloud:} Databricks \textbullet{} Spark \textbullet{} SQL \textbullet{} AWS \textbullet{} Azure \textbullet{} Terraform \textbullet{} dbt \\
 \textbf{Engineering:} Python \textbullet{} Go \textbullet{} Git / GitLab / GitHub \textbullet{} TDD \textbullet{} Bash \textbullet{} Linux \textbullet{} Docker
 \end{minipage}
