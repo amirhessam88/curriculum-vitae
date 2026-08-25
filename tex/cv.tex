@@ -78,13 +78,15 @@ ORCID:// \href{https://orcid.org/0000-0003-4677-6907}{\bf 0000-0003-4677-6907} \
 \vspace{\topsep}
 
 \begin{tightemize}
-\item Technical lead of ConvoHealth, the observability framework for Rivian Voice Assistant, covering reliability, monitoring, and production AI evaluation via LLM-as-judge.
+\item Led the rollout of ConvoHealth, the observability stack for \textbf{Rivian Voice Assistant}, scoring all in-cabin LLM calls via LLM-as-a-judge; scaled the assistant from 3.5K to 85K, then 150K vehicles.
 
-\item Technical lead for Databricks platform architecture and Asset Bundles, enabling teams across the Rivian--VW joint venture to ship production data and ML pipelines with CI/CD.
+\item Drove Databricks Asset Bundles (DABs) adoption across Rivian and RV-Tech with 10+ cookiecutter templates and platform best practices spanning MLflow, Model Serving, and the broader Databricks stack.
 
-\item Designed scalable platform patterns within Databricks for Insights and platform users across the organization.
+\item Designed data-ai-hub, a Python/Terraform monorepo for libraries, apps, and services on the Databricks platform (200+ MAU), with leaf-based CI/CD across GitLab workflows and in-house toolchains for linting, formatting, type checking, and unit/integration tests.
 
-\item Tools: Python, Terraform, Databricks, Asset Bundles, Git, GitLab, observability tooling (Datadog / Grafana / Dynatrace), LLMs.
+\item Built shared Python libraries (logging, Databricks, MLflow, PySpark) that standardized engineering practices across 10K+ users.
+
+\item Tools: Python, Terraform, Databricks, Asset Bundles, cookiecutter, MLflow, Model Serving, Git, GitLab, observability tooling (Datadog / Grafana / Dynatrace), LLMs.
 \end{tightemize}
 \sectionsep
 
@@ -96,15 +98,19 @@ ORCID:// \href{https://orcid.org/0000-0003-4677-6907}{\bf 0000-0003-4677-6907} \
 \vspace{\topsep}
 
 \begin{tightemize}
-\item Technical lead of Process-Health, an anomaly detection system deployed in Rivian's battery and drive-unit shops.
+\item Stood up AI/ML platform architecture powered by ZenML, Kubeflow, and MLflow across Enterprise Technology (ET) and Digital Manufacturing Engineering (DME), including factory data systems, reusable production ML patterns, and an automated shop decision-making platform.
 
-\item Technical lead of Battery Submodule Thermography, an on-edge Physical AI model deployed on Rivian's battery submodule line.
+\item Productionized Process-Health, an anomaly-detection and statistical process control (SPC) system for non-stationary processes in Rivian's battery and drive-unit shops, with Slack-bot, PagerDuty, and email alerting to identify impacted parts and vehicles during containments.
 
-\item Built AI/ML platform architecture powered by ZenML, Kubeflow, and MLflow; established coding standards and reusable production ML patterns for the team.
+\item Authored an ETL pattern with ZenML and Snowpark UDFs to transform test-results data from factory testing stations whose complex formats could not be handled by dbt ELT.
 
-\item Technical lead for algorithms delivering an automated decision-making platform and overall data system architecture for factory data and scalable solutions within Digital Manufacturing Engineering.
+\item Delivered the LineConfig application during ramp-up of the Enduro drive-unit shop.
 
-\item Tools: Python, SQL, Pandas, dbt, Scikit-Learn, ZenML, MLflow, Kubeflow, Databricks, Spark, Git, GitLab.
+\item Deployed Battery Submodule Thermography, an on-edge Physical AI model to detect anomalous laser welds on Rivian's battery submodule line.
+
+\item Maintained the Factory-Data GitLab Cloud repository of applications, templates, features, projects, and services; developed 10+ internal Python libraries and wrappers, rolled out coding standards across Digital Manufacturing Engineering, and automated formatting, linting, testing, documentation, plus CI templates for lint, test, build, publish, and deploy of libraries, apps, Docker images, and docs.
+
+\item Tools: Python, ZenML, Kubeflow, MLflow, Snowpark, dbt, SQL, Pandas, Scikit-Learn, Slack, PagerDuty, Git, GitLab, Docker.
 \end{tightemize}
 \sectionsep
 
@@ -117,11 +123,13 @@ ORCID:// \href{https://orcid.org/0000-0003-4677-6907}{\bf 0000-0003-4677-6907} \
 \vspace{\topsep}
 
 \begin{tightemize}
-\item Lead in the design, development, and implementation of an Attrition model for the Polyethylene (PE) sector of the EMCC to predict the customer churn with statistical significance in the future months with the hope to incorporate better solutions for negotiations of the new contracts with customers due to unprecedented things such as low demand and COVID19.
+\item Owned the Attrition model for the Polyethylene (PE) sector of \textbf{EMCC}, forecasting customer churn with statistical significance to inform new-contract negotiations during COVID-era demand shocks.
 
-\item  Lead in the design, development, and implementation of the interpretable Transaction-Specific-Pricing model for Polypropylene (PP) sector to apply customer segmentation using clustering algorithms and machine learning and recommend pricing to maximize the variable margin for each month of revenue for Americas (Canada, USA, and Mexico).
+\item Introduced Dynamic Revenue Management (DRM), an interpretable Rules-Based pricing model for High Density Polyethylene (HDPE) and Linear Low Density Polyethylene (LLDPE) that segmented customers and recommended monthly prices to maximize variable margin for CANUSA (Canada and USA)---\$90M revenue impact.
 
-\item Lead in the design, development, and implementation of the interpretable Rules-Based model for High Density Polyethylene (HDPE) and Linear Low Density Polyethylene (LLDPE) sectors to incorporate customer segmentation and recommend pricing to maximize the variable margin for each month of revenue for CANUSA (Canada and USA).
+\item Constructed an interpretable Transaction-Specific-Pricing model for the Polypropylene (PP) sector across the Americas (Canada, USA, and Mexico), using clustering and machine learning for customer segmentation and monthly margin-maximizing price recommendations.
+
+\item Supervised junior data scientists supporting the HDPE/LLDPE Rules-Based and PP Transaction-Specific-Pricing models, contributing \$41M in additional revenue in H1 2021.
 
 \item Tools: Python, SQL, Pandas, Scikit-Learn, XGBoost, GLM-Net, TensorFlow, Keras, Azure DevOps, Git, GitHub.
 \end{tightemize}
@@ -135,27 +143,31 @@ ORCID:// \href{https://orcid.org/0000-0003-4677-6907}{\bf 0000-0003-4677-6907} \
 \location{October 2018 – December 2019 | Kansas City, MO}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Building 90-day pediatric asthma re-admission model for Children's Hospital of Orange County (CHOC).
-\item Building 30-day pediatric all cause re-admission model for 17 hospitals around the US.
-\item Building predictive model for bundled payments care improvement advanced (BPCI-A) for 37 defined CMS episodes for Navi-Health.
+\item Shipped a Bundled Payments for Care Improvement Advanced (BPCI-A) model for NaviHealth covering 32 Centers for Medicare and Medicaid Services (CMS)-defined episodes of care; providers prospectively agree to a predefined reimbursement amount, improving cost transparency for patients and reducing waste for health systems.
+
+\item Created 30-day pediatric all-cause readmission models for Adventist Health, Children's Hospital of Orange County, Intermountain Healthcare, Memorial Hermann, MU Health Care, CoxHealth, BayCare Health System, Baptist Health South Florida, Atrium Health, and Advocate Physician Partners.
+
+\item Implemented a 90-day pediatric asthma readmission model for Children's Hospital of Orange County (CHOC).
+
 \item Tools: Python, Spark, SQL, MLlib, Pandas, Scikit-Learn, XGBoost, GLM-Net, TensorFlow, Keras, AWS, JIRA, Git, GitHub.
 \end{tightemize}
 \sectionsep
 \sectionsep
 
 \sectionsep
-\runsubsection{Mynomx Inc. (Previously Precision Wellness Inc.)}
+\runsubsection{Mynomx Inc. (acquired by 1health.io)}
 \descript{| Data Scientist}
 
 \location{June 2017 – August 2017, May 2018 – August 2018 | Palo Alto, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed Machine Learning algorithms for population health management on Stanford and UK Bio-Bank databases.
-\item Took statistical models and transformed them into robust and scalable codes using Spark and ML library.
-\item Performed integration of the algorithms and data sources.
-\item Implemented new codes at scale and to meet performance guidelines.
-\item Tools: Python, R, Spark, Scikit-Learn, Cox Regression, TensorFlow, Keras, Lifelines, MLlib, BitBucket, JIRA, Apache Zeppelin.
+\item Applied statistical methods and novel algorithms to healthcare databases (Stanford and UK Biobank) for risk-assessment and population-health applications.
 
+\item Engineered datasets and pipelines to support operational and exploratory analysis.
+
+\item Translated statistical models into scalable, robust code on Spark and MLlib to handle large-volume healthcare data.
+
+\item Tools: Python, R, Spark, Scikit-Learn, Cox Regression, TensorFlow, Keras, Lifelines, MLlib, BitBucket, JIRA, Apache Zeppelin.
 \end{tightemize}
 
 
@@ -501,7 +513,7 @@ Founder of \textbf{\href{https://github.com/slickml}{SlickML}} (\custombold{\hre
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Skills}
 \begin{minipage}[t]{\textwidth}
-\textbf{MLOps / AI:} Databricks \textbullet{} ZenML \textbullet{} MLflow \textbullet{} Kubeflow \textbullet{} LLMs \textbullet{} CI/CD \textbullet{} Observability (Datadog / Grafana / Dynatrace) \\
+\textbf{MLOps / AI:} Databricks \textbullet{} DABs \textbullet{} MLflow \textbullet{} Model Serving \textbullet{} Feature Store \textbullet{} ZenML \textbullet{} Kubeflow \textbullet{} LLMs \textbullet{} RAG \textbullet{} LLM-as-a-judge \textbullet{} PEFT \textbullet{} PyTorch \textbullet{} Hugging Face \textbullet{} Physical AI / on-device \textbullet{} CI/CD \textbullet{} Observability (Datadog / Grafana / Dynatrace) \\
 \textbf{Data / Cloud:} Spark / PySpark \textbullet{} SQL \textbullet{} AWS \textbullet{} Azure \textbullet{} Terraform \textbullet{} dbt \textbullet{} Pandas \textbullet{} Scikit-Learn \\
 \textbf{Engineering:} Python \textbullet{} Go \textbullet{} Git / GitLab / GitHub \textbullet{} TDD \textbullet{} Bash \textbullet{} Linux \textbullet{} Docker
 \sectionsep
